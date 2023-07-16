@@ -1,0 +1,132 @@
+nav{
+    background: black;
+    height: 150px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 30px;
+    padding-top: 25px;
+    padding-left: 20px ;
+    margin: 0;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    padding-top: 50px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 25px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    
+  }
+  a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+#back{
+    background-color: #068FFF;
+}
+#back h1{
+    color: #EEEEEE;
+}
+#back p{
+    color: #EEEEEE;
+}
+#back button a{
+    color: #EEEEEE;
+}
+#hanging-icons p{
+    font-size: 20px;
+}
+@media (min-width: 992px){
+    .contain {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 768px){
+    .contain {
+        max-width: 720px;
+    }
+}
+@media (min-width: 576px){
+    .contain {
+        max-width: 540px;
+    }
+}
+.contain {
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: groove;
+    align-items: end;
+}
+.contain h3{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.contain .form-control{
+    padding-left: 30px;
+}
+

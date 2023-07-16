@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study /material</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/599f0ea4df.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  nav{
+    background: black;
+    height: 190px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 30px;
+    padding-top: 25px;
+    padding-left: 20px ;
+    margin: 0;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    padding-top: 50px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 25px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    
+  }
+  a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+</style>
+<body>
+  <nav class="container-fluid">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Hard Work Always<br>Pay's Off</label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="studymaterial.html">Study Material</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="index.html #aboutus">About</a></li>
+      <li><a href="fungame.html">Fun Game</a></li>
+    </ul>
+  </nav>
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="bool.gif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Books Are Your Good Freinds</h1>
+        <p class="lead"><b>Get free notes and lecture about your desierd course by clicking them</b></p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-dark btn-lg px-4 me-md-2">Notes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="album py-5 bg-body-tertiary">
+    <div id="study" class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./1st.jpeg" width="100%" height="250">
+            <div class="card-body">
+              <p class="card-text">In this you get full tutorial about <b>DSA with C++</b> and basics of C++</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://drive.google.com/drive/folders/1E03Ch3T06s2IJPmFxWVaHUCkgX81Eo1D?usp=sharing">View</a></button>
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="./2nd.jpg" width="100%" height="250"> 
+            <div class="card-body">
+              <p class="card-text">Want to learn <b>Java Programming</b> checkout this course</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://drive.google.com/drive/folders/1ytDCon3eepRW6Xkcfve260oiZEVbDCn0?usp=sharing">View</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+           <img src="./os.png" width="100%" height="275">
+            <div class="card-body">
+              <p class="card-text">Get the best lectures on <b> Operating System.</b></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://drive.google.com/drive/folders/1MjfbiOpzpitNmimkFdWY9gJlMZzem51v?usp=drive_link">View</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

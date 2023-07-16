@@ -1,0 +1,162 @@
+
+nav{
+  background: black;
+  height: 150px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 30px;
+  padding-top: 25px;
+  padding-left: 20px ;
+  margin: 0;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  padding-top: 50px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 25px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+.back{
+  width: 100%;
+  height: 50%;
+  background-color: rgba(255, 228, 196, 0.459);
+  margin: 0;
+  padding: 0;
+}
+.back .col-lg-6 p{
+font-size: 25px;
+font-weight: 600;
+}
+
+#email button{
+color: red;
+background-color: rgb(255, 198, 196);
+border-radius: 10px;
+border-width: auto;
+}
+#email i{
+width: 100px;
+height: 80px;
+}
+@media (min-width:760) and (max-width:1700){
+  .back{
+    width: 100%;
+    height: 50%;
+    background-color: rgba(255, 228, 196, 0.459);
+    margin: 0;
+    padding: 0;
+}
+
+#nav{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+header{
+    margin: 0;
+    height: 100%;
+    background-color: black;
+}
+#nav ul li{
+  padding-right: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  
+}
+span{
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  color: aliceblue;
+}
+.nav-link{
+  padding-top: 30px;
+  font-size: 25px;
+  color: aliceblue;
+}
+
+.back .col-lg-6 p{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#email button{
+  color: red;
+  background-color: rgb(255, 198, 196);
+  border-radius: 10px;
+  border-width: auto;
+}
+#email i{
+  width: 100px;
+  height: 80px;
+}
+}
+  
